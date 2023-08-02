@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login_animated.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+<body>
+    
+    <div class="loginsection">
+        <div class="formbox login">
+            <form class="form" action="">
+                <h2>Sign In</h2>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class='bx bxs-envelope'></i>
+                    </span>
+                    <input type="text" id="email" required autocomplete="off">
+                    <label for="email">Email</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class='bx bxs-lock'></i>
+                    </span>
+                    <input type="text" id="password" required autocomplete="off">
+                    <label for="password">Password</label>
+                </div>
+               
+                <div class="remember-pswd">
+                    <label for="remember"><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button class="btn">Login</button>
+                <div class="create-act">
+                    <p>Don't have an account?<a href="#" class="registerlink"> Sign up</a></p>
+                </div>
+                
+            </form>
+        </div>
+
+
+        <div class="formbox register">
+            <form class="form" action="">
+                <h2>Sign Up</h2>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class='bx bxs-envelope'></i>
+                    </span>
+                    <input type="email" id="email" required autocomplete="off">
+                    <label for="email">Email</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class='bx bxs-lock'></i>
+                    </span>
+                    <input type="text" id="password" required autocomplete="off">
+                    <label for="password">Password</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class='bx bxs-lock'></i>
+                    </span>
+                    <input type="text" id="cnfpassword" required autocomplete="off">
+                    <label for="cnfpassword">Confirm Password</label>
+                </div>
+               
+                
+                <button class="btn">Sign Up</button>
+                <div class="create-act">
+                    <p>Have an account?<a href="#" class="loginlink"> Sign in</a></p>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <script src="login_animated.js"></script>
+</body>
+</html>
