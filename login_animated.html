@@ -17,15 +17,18 @@
                     <span class="icon">
                         <i class='bx bxs-envelope'></i>
                     </span>
-                    <input type="text" id="email" required autocomplete="off">
+                    <input type="email" id="email" required autocomplete="off">
                     <label for="email">Email</label>
                 </div>
                 <div class="inputbox">
                     <span class="icon">
                         <i class='bx bxs-lock'></i>
                     </span>
-                    <input type="text" id="password" required autocomplete="off">
+                    <input type="password" id="lpassword" required autocomplete="off">
                     <label for="password">Password</label>
+                    <span class="toggle-password" onclick="togglePassword('lpassword', this)">
+                        <i class='bx bxs-show'></i>
+                    </span>
                 </div>
                
                 <div class="remember-pswd">
@@ -55,15 +58,21 @@
                     <span class="icon">
                         <i class='bx bxs-lock'></i>
                     </span>
-                    <input type="text" id="password" required autocomplete="off">
+                    <input type="password" id="spassword" required autocomplete="off">
                     <label for="password">Password</label>
+                    <span class="toggle-password" onclick="togglePassword('spassword', this)">
+                        <i class='bx bxs-show'></i>
+                    </span>
                 </div>
                 <div class="inputbox">
                     <span class="icon">
                         <i class='bx bxs-lock'></i>
                     </span>
-                    <input type="text" id="cnfpassword" required autocomplete="off">
+                    <input type="password" id="cnfpassword" required autocomplete="off">
                     <label for="cnfpassword">Confirm Password</label>
+                    <span class="toggle-password" onclick="togglePassword('cnfpassword', this)">
+                        <i class='bx bxs-show'></i>
+                    </span>
                 </div>
                
                 
