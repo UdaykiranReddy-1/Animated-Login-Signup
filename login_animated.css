@@ -86,8 +86,16 @@ body{
     font-size: 19px;
 }
 
-input:focus ~ label,
+/* input:focus ~ label,
 input:valid ~ label{
+    top: -5px;
+    color: #f00;
+    font-weight: 600;
+} */
+
+
+.inputbox input:focus ~ label,
+.inputbox input.has-content ~ label {
     top: -5px;
     color: #f00;
     font-weight: 600;
@@ -157,4 +165,18 @@ a:hover{
 .loginsection.active .formbox.login{
     transform: translateY(430px);
     transition-delay: 0s ;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 13px;
+    right: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: red;
 }
